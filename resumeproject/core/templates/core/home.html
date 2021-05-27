@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class=" mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/sanjog.jpg' %}" alt="ProfilePic"
+         class="img-thumbnail" width="250px" height="150px">
+    </div>
+
+    <div class="text-white mt-5 mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello World,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px;">
+                <b class="text-warning">Considering a career in software engineering?</b> Whether you’ve already declared a major in Computer
+                Science or just started learning how to code on your own, there are some key things to
+                know before pursuing a career in software engineering. To help you through the journey,
+                we’ve compiled a guide to the most frequently asked questions about starting your career
+                as a software engineer, covering everything from degree requirements to top skills to salary expectations.
+            </p>
+            <p><b class="text-warning">Considering a career in software engineering?</b> Whether you’ve already declared a major in Computer
+                Science or just started learning how to code on your own, there are some key things to
+                know before pursuing a career in software engineering. To help you through the journey,
+                we’ve compiled a guide to the most frequently asked questions about starting your career
+                as a software engineer, covering everything from degree requirements to top skills to salary expectations.
+            </p>
+
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact</a>
+    </div>
+</div>
+
+{% endblock %}
